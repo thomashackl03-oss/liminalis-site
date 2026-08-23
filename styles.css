@@ -49,7 +49,7 @@ button,input{font:inherit}
   position:sticky;top:0;z-index:70;background:rgba(244,241,233,.94);
   backdrop-filter:blur(16px);border-bottom:1px solid rgba(216,210,199,.88)
 }
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:17px 0 14px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0 15px}
 .brand{display:flex;align-items:center;gap:13px}
 .mark{
   width:38px;height:38px;border:1px solid rgba(23,56,68,.35);border-radius:50%;position:relative;flex:none
@@ -61,11 +61,16 @@ button,input{font:inherit}
   color:var(--navy);font-size:27px;line-height:1;letter-spacing:.18em
 }
 .brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.045em;margin-top:6px}
+.top-actions{display:flex;align-items:center;gap:12px}
+.top-search{display:inline-flex;align-items:center;gap:9px;color:var(--navy);font-size:13.5px;font-weight:700;padding:8px 4px}
+.top-search:hover{color:var(--petrol-dark)}
+.search-glyph{width:17px;height:17px;border:2px solid currentColor;border-radius:50%;position:relative;display:inline-block}
+.search-glyph:after{content:"";position:absolute;width:7px;height:2px;background:currentColor;right:-5px;bottom:-2px;transform:rotate(45deg);border-radius:2px}
 .menu{display:none;border:1px solid var(--line);background:var(--paper-solid);border-radius:999px;padding:9px 14px;color:var(--navy);font-weight:750}
 .nav{border-top:1px solid rgba(216,210,199,.68)}
-.nav .container{display:flex;align-items:center;gap:23px;padding:10px 0;overflow:auto;scrollbar-width:none}
+.nav .container{display:flex;align-items:center;gap:27px;padding:12px 0;overflow:auto;scrollbar-width:none}
 .nav .container::-webkit-scrollbar{display:none}
-.nav a{font-size:12.5px;white-space:nowrap;color:#3e484b;transition:.18s}
+.nav a{font-size:13.5px;white-space:nowrap;color:#354043;transition:.18s;letter-spacing:.005em}
 .nav a:hover,.nav a[aria-current="page"]{color:var(--petrol-dark)}
 .nav .push{margin-left:auto}
 
@@ -98,15 +103,15 @@ h4{font-size:19px}
 .badge.contested{background:#f1edf1;color:#665361;border-color:#cfc1cb}
 .badge.contested:before{background:var(--contested)}
 
-.hero{padding:65px 0 50px}
-.hero-grid{display:grid;grid-template-columns:1.13fr .87fr;gap:52px;align-items:center}
+.hero{padding:74px 0 62px}
+.hero-grid{display:grid;grid-template-columns:1.13fr .87fr;gap:58px;align-items:center}
 .hero-art,.cover-art,.feature-art{
   border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;
   background:
     radial-gradient(circle at 31% 23%,rgba(255,255,255,.78),transparent 24%),
     linear-gradient(145deg,#b8cbc7,#e5dfd5 56%,#c9b9a5)
 }
-.hero-art{min-height:475px;border-radius:28px}
+.hero-art{min-height:510px;border-radius:28px}
 .hero-art:before,.cover-art:before,.feature-art:before{
   content:"";position:absolute;width:250px;height:250px;border-radius:50%;
   border:1px solid rgba(23,56,68,.25);left:48%;top:50%;transform:translate(-50%,-50%);
@@ -263,4 +268,52 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(
   .newsletter form,.searchbar{flex-direction:column}
   .newsletter input,.search-input{width:100%;min-width:0}
   .feature-copy{padding:28px}
+}
+
+
+/* LIMINALIS 1.1 refinements */
+.hero .meta{
+  font-size:13.25px;
+  color:#465154;
+  font-weight:650;
+  gap:12px;
+  margin-top:14px;
+}
+.hero .meta span+span:before{
+  color:#8b948f;
+  margin-right:12px;
+}
+.hero-art.nde-cover,
+.cover-art.nde-cover{
+  background-image:
+    linear-gradient(rgba(23,56,68,.025),rgba(23,56,68,.025)),
+    url("cover-nahtoderfahrungen.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.hero-art.nde-cover:before,
+.hero-art.nde-cover:after,
+.cover-art.nde-cover:before,
+.cover-art.nde-cover:after{
+  display:none;
+}
+.card[href="artikel-nahtoderfahrungen.html"] .thumb{
+  background-image:
+    linear-gradient(rgba(23,56,68,.08),rgba(23,56,68,.08)),
+    url("cover-nahtoderfahrungen.webp");
+  background-size:cover;
+  background-position:center 43%;
+}
+.card[href="artikel-nahtoderfahrungen.html"] .thumb:after{display:none}
+
+@media(min-width:1100px){
+  .hero-grid{min-height:575px}
+  .hero-art{min-height:535px}
+}
+@media(max-width:720px){
+  .top-actions{gap:8px}
+  .top-search{padding:8px}
+  .top-search span:last-child{display:none}
+  .hero .meta{font-size:12.5px}
 }

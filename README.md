@@ -1,4 +1,4 @@
-# LIMINALIS 1.0 – FLAT Upload-Version
+# LIMINALIS 1.1 – FLAT Upload-Version
 
 Diese Variante ist speziell für den Upload über den GitHub-Webbrowser vorbereitet.
 
@@ -14,3 +14,10 @@ Bestehende `index.html` darf ersetzt werden.
 
 GitHub Pages bleibt:
 https://thomashackl03-oss.github.io/liminalis-site/
+
+## Version 1.1
+- Desktop-Navigation größer und luftiger
+- Suche prominent oben rechts
+- Hero-Metadaten größer und kontrastreicher
+- Hero auf großen Displays höher
+- eigenes redaktionelles Titelmotiv für den Nahtoderfahrungsartikel
