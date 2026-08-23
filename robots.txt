@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thomashackl03-oss.github.io/liminalis-site/sitemap.xml
