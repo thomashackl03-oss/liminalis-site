@@ -271,42 +271,6 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(
 }
 
 
-/* LIMINALIS 1.1 refinements */
-.hero .meta{
-  font-size:13.25px;
-  color:#465154;
-  font-weight:650;
-  gap:12px;
-  margin-top:14px;
-}
-.hero .meta span+span:before{
-  color:#8b948f;
-  margin-right:12px;
-}
-.hero-art.nde-cover,
-.cover-art.nde-cover{
-  background-image:
-    linear-gradient(rgba(23,56,68,.025),rgba(23,56,68,.025)),
-    url("cover-nahtoderfahrungen.webp");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.hero-art.nde-cover:before,
-.hero-art.nde-cover:after,
-.cover-art.nde-cover:before,
-.cover-art.nde-cover:after{
-  display:none;
-}
-.card[href="artikel-nahtoderfahrungen.html"] .thumb{
-  background-image:
-    linear-gradient(rgba(23,56,68,.08),rgba(23,56,68,.08)),
-    url("cover-nahtoderfahrungen.webp");
-  background-size:cover;
-  background-position:center 43%;
-}
-.card[href="artikel-nahtoderfahrungen.html"] .thumb:after{display:none}
-
 @media(min-width:1100px){
   .hero-grid{min-height:575px}
   .hero-art{min-height:535px}
@@ -320,3 +284,46 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(
 
 .planned-btn{cursor:default;opacity:.82;background:#6c7778;border-color:#6c7778}
 .planned-dark{cursor:default;opacity:.85}
+
+/* LIMINALIS 1.3 – clean editorial landing */
+.portal-art{
+  min-height:510px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 50% 46%,rgba(255,255,255,.78) 0 16%,transparent 17%),
+    radial-gradient(circle at 50% 46%,transparent 0 28%,rgba(85,124,120,.13) 29% 30%,transparent 31%),
+    radial-gradient(circle at 50% 46%,transparent 0 42%,rgba(23,56,68,.08) 43% 44%,transparent 45%),
+    linear-gradient(145deg,#ccd8d3,#f0ebe2 57%,#d5c5b2);
+}
+.portal-art:before{
+  content:"";
+  position:absolute;
+  width:250px;height:250px;border-radius:50%;
+  border:1px solid rgba(23,56,68,.25);
+  left:50%;top:46%;transform:translate(-50%,-50%);
+}
+.portal-word{
+  position:absolute;left:50%;bottom:58px;transform:translateX(-50%);
+  font:500 clamp(42px,5vw,72px)/1 Georgia,serif;
+  letter-spacing:.16em;color:rgba(23,56,68,.48);
+}
+.portal-caption{
+  position:absolute;left:50%;bottom:28px;transform:translateX(-50%);
+  white-space:nowrap;font-size:11px;letter-spacing:.06em;color:#566467;
+}
+.neutral-thumb{
+  background:
+    radial-gradient(circle at 52% 44%,rgba(255,255,255,.74) 0 14%,transparent 15%),
+    radial-gradient(circle at 52% 44%,transparent 0 28%,rgba(85,124,120,.13) 29% 30%,transparent 31%),
+    linear-gradient(135deg,#c4d2ce,#ece6dc 62%,#d0c0ad)!important;
+}
+.card.upcoming-card .neutral-thumb:after{display:none}
+@media(max-width:720px){
+  .portal-art{min-height:310px}
+  .portal-word{font-size:38px}
+  .portal-caption{font-size:9px}
+}
