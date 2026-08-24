@@ -1,4 +1,4 @@
-# LIMINALIS 1.3 – Clean Editorial
+# LIMINALIS 1.2 – Redaktioneller Reset
 
 Diese Variante ist speziell für den Upload über den GitHub-Webbrowser vorbereitet.
 
@@ -28,10 +28,3 @@ https://thomashackl03-oss.github.io/liminalis-site/
 - Keine vorweggenommenen Evidenzbewertungen
 - Nach Freigabe: technische Web-Integration, Typografie, Verlinkung und Bildplatzierung
 - Bildbeschriftungen knapp, konkret und redaktionell
-
-## Version 1.3
-- Startseite enthält keinen vorgefertigten Artikel mehr
-- Nahtoderfahrungen ausschließlich als geplanter Beitrag
-- kein Nahtoderfahrungs-Cover / keine artikelbezogene Titelabbildung
-- neutraler LIMINALIS-Einstieg als Hero
-- Artikeltexte entstehen ausschließlich durch Redaktion LIMINALIS
