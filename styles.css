@@ -317,3 +317,6 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(
   .top-search span:last-child{display:none}
   .hero .meta{font-size:12.5px}
 }
+
+.planned-btn{cursor:default;opacity:.82;background:#6c7778;border-color:#6c7778}
+.planned-dark{cursor:default;opacity:.85}

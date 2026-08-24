@@ -1,4 +1,4 @@
-# LIMINALIS 1.1 – FLAT Upload-Version
+# LIMINALIS 1.2 – Redaktioneller Reset
 
 Diese Variante ist speziell für den Upload über den GitHub-Webbrowser vorbereitet.
 
@@ -21,3 +21,10 @@ https://thomashackl03-oss.github.io/liminalis-site/
 - Hero-Metadaten größer und kontrastreicher
 - Hero auf großen Displays höher
 - eigenes redaktionelles Titelmotiv für den Nahtoderfahrungsartikel
+
+## Redaktioneller Workflow ab Version 1.2
+- Recherche und Manuskript ausschließlich durch Redaktion LIMINALIS
+- Keine automatisch vorgefertigten Artikel
+- Keine vorweggenommenen Evidenzbewertungen
+- Nach Freigabe: technische Web-Integration, Typografie, Verlinkung und Bildplatzierung
+- Bildbeschriftungen knapp, konkret und redaktionell
